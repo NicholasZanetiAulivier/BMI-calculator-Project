@@ -1,22 +1,66 @@
 body {
-    background-color: antiquewhite;
+    background-color: #e7fafa;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#topnavbar {
+    background-color: #2EC4B6;
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#topnavbar h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: medium;
+    text-align: justify;
 }
 
 #content {
     display: flex;
+    justify-content: center;
+}
+
+#facts {
+    padding: 20px;
 }
 
 .bigContainer {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 400px;
     height: fit-content;
     background-color: white;
     border-radius: 20px;
-    padding: 20px;
+    border-color: #2EC4B6;
+    border-style: solid;
+    padding: 10px;
     align-items: center;
     justify-content: center;
+    margin: 40px;
 }
 
 #inputForm {
@@ -25,9 +69,49 @@ body {
     font-size: larger;
 }
 
-#inputForm div {
+#inputForm div,
+input[type="range"] {
+    align-self: center;
+    width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+input {
+    font-size: medium;
+    height: fit-content;
+}
+
+select {
+    font-size: medium;
+}
+
+input[type="number"],
+select {
+    border-radius: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-width: 1px;
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    align-self: center;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#resultContainer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 tr,
@@ -48,4 +132,15 @@ th {
 
 #firstRow {
     background-color: aqua;
+}
+
+#charts {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
