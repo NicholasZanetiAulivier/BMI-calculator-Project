@@ -79,6 +79,7 @@ h1 {
     display: flex;
     flex-direction: column;
     font-size: 1.7vw;
+    font-family: monospace;
 }
 
 #inputForm div,
@@ -88,7 +89,7 @@ input[type="range"] {
     margin-top: 1vw;
     margin-bottom: 1vw;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 input {
@@ -110,10 +111,19 @@ select {
     margin-right: 0.5vw;
 }
 
+input[type="number"] {
+    width: 5vw;
+}
+
 #resultContainer {
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 1.5vw;
+}
+
+#resultContainer h1 {
+    font-size: 3vw;
 }
 
 img {
