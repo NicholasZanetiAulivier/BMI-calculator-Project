@@ -26,6 +26,7 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 2vw;
 }
 
 #topnavbar h1 {
@@ -40,10 +41,6 @@ h1 {
 p {
     font-size: 1vw;
     text-align: justify;
-}
-
-h1 {
-    font-size: 2vw;
 }
 
 #content {
@@ -68,6 +65,7 @@ h1 {
     border-color: #2EC4B6;
     border-style: solid;
     padding: 1vw;
+    padding-bottom: 2vw;
     align-items: center;
     justify-content: center;
     margin: 4vw;
@@ -85,6 +83,7 @@ h1 {
 #inputForm div,
 input[type="range"] {
     align-self: center;
+    align-items: center;
     width: 90%;
     margin-top: 1vw;
     margin-bottom: 1vw;
@@ -152,7 +151,7 @@ th {
 }
 
 #firstRow {
-    background-color: aqua;
+    background-color: #d6d9ff;
 }
 
 #charts {
@@ -164,4 +163,81 @@ th {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #topnavbar h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 2.7vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        margin: auto;
+        margin-top: 6vw;
+    }
+
+    #facts {
+        order: 2;
+    }
+
+    .bigContainer {
+        width: 60vw;
+        padding: 1vw;
+        padding-bottom: 5vw;
+        margin: 1vw;
+    }
+
+    #inputForm {
+        font-size: 4vw;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    input {
+        font-size: 4vw;
+        height: fit-content;
+    }
+
+    select {
+        font-size: 4vw;
+    }
+
+    input[type="number"] {
+        width: 15vw;
+        border-radius: 1vw;
+    }
+
+    #resultContainer {
+        font-size: 5vw;
+    }
+
+    #resultContainer h1 {
+        font-size: 6vw;
+    }
+
+    img {
+        width: 50vw;
+    }
+
+    #formula {
+        width: 35vw;
+    }
+
+    tr,
+    th,
+    table {
+        font-size: 3vw;
+    }
 }
