@@ -2,14 +2,17 @@ body {
     background-color: #e7fafa;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
-    margin: 0;
+    width: fit-content;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #topnavbar {
     background-color: #2EC4B6;
-    position: relative;
+    position: fixed;
     height: fit-content;
-    width: 100%;
+    right: 0;
     left: 0;
     top: 0;
     z-index: 1000;
@@ -29,83 +32,82 @@ h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     color: #FFFFFF;
-    font-size: 60px;
+    font-size: 5vw;
     margin: 0;
     padding: 0;
 }
 
 p {
-    font-size: medium;
+    font-size: 1vw;
     text-align: justify;
+}
+
+h1 {
+    font-size: 2vw;
 }
 
 #content {
     display: flex;
     justify-content: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 6vw;
 }
 
 #facts {
-    padding: 20px;
+    padding: 1vw;
 }
 
 .bigContainer {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 28vw;
     height: fit-content;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 2vw;
     border-color: #2EC4B6;
     border-style: solid;
-    padding: 10px;
+    padding: 1vw;
     align-items: center;
     justify-content: center;
-    margin: 40px;
+    margin: 4vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
 }
 
 #inputForm {
     display: flex;
     flex-direction: column;
-    font-size: larger;
+    font-size: 1.7vw;
 }
 
 #inputForm div,
 input[type="range"] {
     align-self: center;
     width: 90%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
 }
 
 input {
-    font-size: medium;
+    font-size: 1vw;
     height: fit-content;
 }
 
 select {
-    font-size: medium;
+    font-size: 1vw;
 }
 
 input[type="number"],
 select {
-    border-radius: 5px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 5px;
+    border-radius: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-top: 0.5vw;
+    padding-left: 0.5vw;
     border-width: 1px;
-    margin-right: 5px;
-}
-
-input[type="submit"] {
-    width: 100px;
-    align-self: center;
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-size: 20px;
-    padding: 5px;
+    margin-right: 0.5vw;
 }
 
 #resultContainer {
@@ -114,9 +116,18 @@ input[type="submit"] {
     text-align: center;
 }
 
+img {
+    width: 24vw;
+}
+
+#formula {
+    width: 15vw;
+}
+
 tr,
 th,
 table {
+    font-size: 1vw;
     border-width: 2px;
     border-style: solid;
     border-color: #000000;
@@ -127,7 +138,7 @@ table {
 }
 
 th {
-    padding: 10px;
+    padding: 1vw;
 }
 
 #firstRow {
