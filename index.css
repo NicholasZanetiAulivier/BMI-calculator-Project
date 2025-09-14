@@ -1,0 +1,51 @@
+body {
+    background-color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#content {
+    display: flex;
+}
+
+.bigContainer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#inputForm {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+#inputForm div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+tr,
+th,
+table {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+}
+
+#firstRow {
+    background-color: aqua;
+}

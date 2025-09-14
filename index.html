@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <div class="bigContainer">
+            <h1>BMI Calculator</h1>
+            <form action="_" id="inputForm">
+                <div class="w">
+                    <label for="weight">Weight: </label>
+                    <input type="number" id="weight" name="weight"></input>
+                    <select id="weightU" name="weightU">
+                        <option value="kg" selected>kg</option>
+                        <option value="g">g</option>
+                        <option value="oz">oz</option>
+                        <option value="lb">lb</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="height">Height: </label>
+                    <input type="number" id="height" name="height"></input>
+                    <select id="heightU" name="heightU">
+                        <option value="cm" selected>cm</option>
+                        <option value="m">m</option>
+                        <option value="in">in</option>
+                        <option value="ft">ft</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div class="bigContainer">
+            <h1>BMI Reference Table</h1>
+            <table>
+                <tr id="firstRow">
+                    <th>Classification</th>
+                    <th>BMI Range</th>
+                </tr>
+                <tr>
+                    <th>Severe Thinness</th>
+                    <th>&#60;16</th>
+                </tr>
+                <tr>
+                    <th>Moderate Thinness</th>
+                    <th>16 - 17</th>
+                </tr>
+                <tr>
+                    <th>Mild Thinness</th>
+                    <th>17 - 18.5</th>
+                </tr>
+                <tr>
+                    <th>Normal</th>
+                    <th>18.5 - 25</th>
+                </tr>
+                <tr>
+                    <th>Overweight</th>
+                    <th>25 - 30</th>
+                </tr>
+                <tr>
+                    <th>Obese Class I</th>
+                    <th>30 - 35</th>
+                </tr>
+                <tr>
+                    <th>Obese Class II</th>
+                    <th>35 - 40</th>
+                </tr>
+                <tr>
+                    <th>Obese Class III</th>
+                    <th>&#62; 40</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
